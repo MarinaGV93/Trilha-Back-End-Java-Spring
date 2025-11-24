@@ -1,0 +1,94 @@
+Lombok
+
+    - gera tudo (construtor vazio, construtores, getter e setter e toString()) automaticamente
+
+        - https://projectlombok.org/setup/maven
+
+            - Pega o 1º codigo e depois de colocar as dependencias no arquivo pom, precisa carregar as mudanças, indo no 'maven' no lado direito e apertando 'Reload'
+
+            - Se usa como: @Getter ...
+
+Pega algumas estruturas JSON para consumir
+
+    - https://dummyjson.com/docs
+
+Jackson
+
+    - Converte JSON para Java e vice versa
+
+        - https://www.devmedia.com.br/introducao-ao-jackson-objectmapper/43174
+
+            - Pega o 1º codigo e depois de colocar as dependencias no arquivo pom, precisa carregar as mudanças, indo no 'maven' no lado direito e apertando 'Reload'
+
+Arquitetura da solução
+
+    - Controlador
+        Controla a parte mais externa da aplicação
+
+    - Serviço
+        Regras de negócio
+
+    - Repositório
+        Fazer a comunicação com o BD, seja para leitura, para escrita, para conversão entre entidade e objetos de domínio
+
+    - Domínio
+        Representam as entidades da aplicação, no caso o usuário e as postagens
+        Transversal. Todas as camadas precisam saber como lidar com esse domínio
+
+Spring
+
+    - Possível solução que segue o JEE.
+
+Spring Beans
+
+    - Beans
+        Representação de cada uma das instâncias
+        É uma instância, um objeto de uma determinada classe que é gerenciado pelo spring dentro do seu container
+
+    - Container
+        Ambiente onde estão todos os beans que são gerenciados pelo spring
+
+    Quando se delega a criação de uma determinada instância (objeto) para o spring (entrega isso para o spring para gerenciar), ele põe esses beans dentro desse conteiner e na hora que for necessário, ele faz a devida chamada (injeção)
+
+Spring Boot
+    Torna fácil a criação de aplicações spring, prontas para a produção e que pode apenas clicar no rodar (executar), que já vai estar acessando tudo
+   Trabalha na parte de configuração
+
+   Criar uma aplicação ou a estrutura inicial da aplicação
+
+    - start.spring.io
+    OU
+    - Plugin springboot
+
+    Adicionar dependencias:
+
+        - lombok
+        - Spring Web
+
+Usar o get e set
+
+    - Adicionar a dependência que esta em springdoc.org
+
+           <dependency>
+              <groupId>org.springdoc</groupId>
+              <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+              <version>2.8.14</version>
+           </dependency>
+
+       - Usar
+
+            localhost:8080/swagger-ui/index.html
+
+- resources -> application.properties
+
+    Aplicar algumas configurações
+
+- Spring Data
+
+    Comunicação com o banco de dados
+
+- h2
+
+    Banco de dados em memória e é embarcado dentro da aplicação
+
+        - Precisa definir a configuração no application.properties para se comunicar com o BD
