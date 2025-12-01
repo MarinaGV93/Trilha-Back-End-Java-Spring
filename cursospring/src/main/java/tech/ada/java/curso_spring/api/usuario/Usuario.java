@@ -2,6 +2,7 @@ package tech.ada.java.curso_spring.api.usuario;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -17,14 +18,12 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@EqualsAndHashCode(of = {"uuid"})
 @Entity //Entidade
 public class Usuario {
 
-    //Toda entidade tem que ter a sua chave primaria
-    @Id
-    //Gerado automaticamente
-    @GeneratedValue
+
+    @Id //Toda entidade tem que ter a sua chave primaria
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //Gerado automaticamente. Precisa definir a estratégia de criação (IDENTITY = tem a ver com o schema)
     private Long id;
 
     private UUID uuid;

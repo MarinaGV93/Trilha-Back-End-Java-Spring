@@ -101,3 +101,32 @@ Usar o get e set
     Banco de dados em memória e é embarcado dentro da aplicação
 
         - Precisa definir a configuração no application.properties para se comunicar com o BD
+
+- Database
+
+    - Se o IntelliJ não for Ultimate, instala o plugin:
+
+        Database Navigator
+
+    - Entra nas settings > Tools > Database Navigator >  Connections
+
+    - Ao criar, com o botão direito no banco, clique em settings > filters > add filter e coloque:
+
+        SCHEMA_NAME = 'public'
+
+- Adicionar a dependência do postgres
+
+    <dependency>
+     <groupId>org.postgresql</groupId>
+     <artifactId>postgresql</artifactId>
+    </dependency>
+
+- Converter valores
+
+    - Adicionar dependência modelmapper
+
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.2.0</version>
+        </dependency>

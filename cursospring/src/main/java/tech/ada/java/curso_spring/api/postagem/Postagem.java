@@ -12,14 +12,12 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-//Entidade
-@Entity
+@Entity //Entidade
 public class Postagem {
 
-    //Toda entidade tem que ter a sua chave primaria
-    @Id
-    //Gerado automaticamente
-    @GeneratedValue
+
+    @Id //Toda entidade tem que ter a sua chave primaria
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //Gerado automaticamente. Precisa definir a estratégia de criação (IDENTITY = tem a ver com o schema)
 
     private UUID uuid;
     private String titulo;
