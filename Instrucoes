@@ -1,3 +1,12 @@
+- Notion explicativo
+
+    https://www.notion.so/Primeira-Aplica-o-Spring-Boot-2b512142a6bd80ac9016d0c5b63a20d3
+
+- Verifica o JDK no projeto
+
+    Ao rodar, verifica a primeira linha no terminal (...\jdk-24\bin\java.exe"). Se o JDK estiver diferente do que você colocou no começo, mude ele em File -> Project Structure...
+
+
 Lombok
 
     - gera tudo (construtor vazio, construtores, getter e setter e toString()) automaticamente

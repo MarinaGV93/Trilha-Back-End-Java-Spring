@@ -1,5 +1,5 @@
 package com.ada.aula_todo_list.enums;
 
-public enum TaskStatus {
+public enum Status {
     TODO, DOING, DONE
 }

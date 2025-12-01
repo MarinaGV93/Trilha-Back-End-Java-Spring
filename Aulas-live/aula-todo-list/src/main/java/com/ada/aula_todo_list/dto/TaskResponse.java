@@ -7,6 +7,8 @@ import java.util.List;
 
 @Data
 public class TaskResponse {
+
+    //Coloca os atributos da forma simples que vai receber os dados
     private Long id;
     private String title;
     private String description;
