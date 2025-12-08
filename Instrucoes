@@ -121,6 +121,7 @@ Usar o get e set
      <artifactId>postgresql</artifactId>
     </dependency>
 
+
 - Converter valores
 
     - Adicionar dependência modelmapper
@@ -130,3 +131,23 @@ Usar o get e set
             <artifactId>modelmapper</artifactId>
             <version>3.2.0</version>
         </dependency>
+
+- Tipos de testes
+
+    https://docs.spring.io/spring-boot/reference/testing/test-scope-dependencies.html
+
+- Criar teste
+
+    - Clique no menu Navigate > Test
+    - Marca do que quer fazer o teste
+
+- Para escrever um teste
+    - Cenário
+    - Ação
+    - Validação
+
+- Run '...' with Coverage
+
+    - Teste com cobertura
+
+    - Usa um relatório de um plugin

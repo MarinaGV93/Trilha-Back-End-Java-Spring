@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -20,7 +21,7 @@ public interface UsuarioJpaRepository extends JpaRepository<
         > {
 
     //Opcional
-    Optional<Usuario> findAllByUuid(UUID uuid);
+    Optional<Usuario> findByUuid(UUID uuid);
 
     void deleteByUuid(UUID uuid);
 
@@ -30,5 +31,7 @@ public interface UsuarioJpaRepository extends JpaRepository<
             //Para usar uma SQL nativa
 //            , nativeQuery = true
     )
-    void updateNome(@Param("uuid") UUID uuid, @Param("nome") String nome);
+    void updateNome(@Param("uuid")UUID uuid, @Param("nome")String nome);
+
+    List<Usuario> findByUuidIn(List<UUID> uuids);
 }
