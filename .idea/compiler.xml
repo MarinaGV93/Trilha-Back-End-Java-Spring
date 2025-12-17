@@ -19,6 +19,9 @@
         <module name="aula-todo-list" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="API_Rest" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Trilha-Back-End-Java-Spring.iml" filepath="$PROJECT_DIR$/.idea/Trilha-Back-End-Java-Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cursospring/curso-spring.iml" filepath="$PROJECT_DIR$/cursospring/curso-spring.iml" />
     </modules>
   </component>
 </project>
