@@ -2,13 +2,9 @@ package tech.ada.java.curso_spring.api.usuario;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
-import org.springframework.http.HttpStatus;
-import org.springframework.validation.FieldError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import tech.ada.java.curso_spring.api.exception.NaoEncontradoException;
 
@@ -24,11 +20,11 @@ public class UsuarioRestController {
 //    private final List<Usuario> usuarioList = new ArrayList<>();
 
     //Injetar
-    private final UsuarioJpaRepository repository;
+    private final UsuarioRepository repository;
     private final ModelMapper modelMapper;
 
     //Injetar a dependencia no construtor
-    public  UsuarioRestController(UsuarioJpaRepository repository, ModelMapper modelMapper) {
+    public  UsuarioRestController(UsuarioRepository repository, ModelMapper modelMapper) {
         this.repository = repository;
         this.modelMapper = modelMapper;
     }

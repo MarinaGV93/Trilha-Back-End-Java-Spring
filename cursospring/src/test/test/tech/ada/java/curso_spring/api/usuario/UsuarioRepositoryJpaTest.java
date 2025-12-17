@@ -1,24 +1,26 @@
 package tech.ada.java.curso_spring.api.usuario;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-
 import java.util.Optional;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.ActiveProfiles;
 
+//@WebMvcTest //Teste somente de web
 //Testar apenas a camada de dados
 @DataJpaTest
-//Teste somente de web
-//@WebMvcTest
-class UsuarioJpaRepositoryTest {
+@ActiveProfiles("postgres")
+@AutoConfigureTestDatabase(replace = Replace.NONE)
+class UsuarioRepositoryJpaTest {
 
     @Autowired
-    private UsuarioJpaRepository repository;
+    private UsuarioRepository repository;
 
     @Test
     void findByUuid() {

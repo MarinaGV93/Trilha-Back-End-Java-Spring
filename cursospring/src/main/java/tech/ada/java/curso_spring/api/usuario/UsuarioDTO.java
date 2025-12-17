@@ -1,27 +1,28 @@
-package tech.ada.java.curso_spring.api.usuario;
+package tech.ada.java.cursospring.api.usuario;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Past;
-import lombok.*;
-
-import java.time.LocalDate;
 import java.util.UUID;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString
+@Schema(description = "DTO para criação de usuário")
 public class UsuarioDTO {
-
+    @Schema(description = "UUID do usuário", example = "3fa85f64-5717-4562-b3fc-2c963f66afa6")
     private UUID uuid;
+
+    @Schema(description = "Nome do usuário", example = "Usuário Exemplar")
     private String nome;
+
+    @Schema(description = "Email do usuário", example = "user@example.com")
     private String email;
-    private LocalDate dob;
+
+    @Schema(description = "Data de nascimento", example = "2000-01-01")
+    private String dob;
 }

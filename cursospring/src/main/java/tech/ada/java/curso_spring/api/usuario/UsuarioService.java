@@ -14,7 +14,7 @@ import java.util.UUID;
 public class UsuarioService {
 
     @Autowired
-    private UsuarioJpaRepository usuarioJpaRepository;
+    private UsuarioRepository usuarioJpaRepository;
 
     //Retorna um usuário baseado no UUID
     public Usuario buscarPorUuid(@NotNull UUID usuarioA) {

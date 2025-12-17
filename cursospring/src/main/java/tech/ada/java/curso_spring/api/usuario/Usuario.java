@@ -1,24 +1,27 @@
 package tech.ada.java.curso_spring.api.usuario;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Past;
-import lombok.*;
-
 import java.time.LocalDate;
 import java.util.UUID;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Entity //Entidade
+@Table(name = "usuarios")
 public class Usuario {
 
 
@@ -27,19 +30,15 @@ public class Usuario {
     private Long id;
 
     private UUID uuid;
-
     //Validações
-    //Que nao seja branco
-    @NotBlank
+    @NotBlank //não pode ser nulo ou vazio
     private String nome;
     @Email
     private String email;
-
-    //Que seja uma data do passado
-    @Past
+    @Past //Que seja uma data do passado
     private LocalDate dob;
 
-    public Usuario(UUID uuid, String nome, String email, LocalDate dob) {
+    public Usuario(UUID uuid, @NotNull String nome, @Email String email, @Past LocalDate dob) {
         this.uuid = uuid;
         this.nome = nome;
         this.email = email;
