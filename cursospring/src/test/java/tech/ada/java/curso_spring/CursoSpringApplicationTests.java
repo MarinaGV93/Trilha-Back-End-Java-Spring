@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class CursoSpringApplicationTests {
 
+    //Testa a sanidade da aplicação (saúde)
     @Test
     void contextLoads() {
     }

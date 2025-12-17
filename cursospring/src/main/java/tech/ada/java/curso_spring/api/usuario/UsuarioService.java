@@ -16,6 +16,7 @@ public class UsuarioService {
     @Autowired
     private UsuarioJpaRepository usuarioJpaRepository;
 
+    //Retorna um usuário baseado no UUID
     public Usuario buscarPorUuid(@NotNull UUID usuarioA) {
         return usuarioJpaRepository.findByUuid(usuarioA).orElseThrow(() -> new NaoEncontradoException("Usuário Não encontrado"));
     }

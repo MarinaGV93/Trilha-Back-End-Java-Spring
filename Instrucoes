@@ -151,3 +151,7 @@ Usar o get e set
     - Teste com cobertura
 
     - Usa um relatório de um plugin
+
+- Teste de integração
+
+    - Ver se testando todas as unidades, funciona

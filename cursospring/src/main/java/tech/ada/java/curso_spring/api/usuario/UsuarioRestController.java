@@ -4,6 +4,8 @@ import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import org.modelmapper.ModelMapper;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -39,11 +41,13 @@ public class UsuarioRestController {
     // HTTP = POST,   GET,  PUT, PATCH,  DELETE
 
     @GetMapping
-    public List<Usuario> listarTodos(Pageable pageable //Representa uma página
+    public List<UsuarioDTO> listarTodos(Pageable pageable //Representa uma página
                                       ) {
-        return this.repository
+//        return this.repository
                 //SELECT * (vai buscar todos os registros que estiverem na tabela)
-                .findAll(pageable);
+//                .findAll(pageable);
+        Page<Usuario> usuarios = this.repository.findAll(pageable);
+        return new PageImpl<>();
     }
 
 
