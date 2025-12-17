@@ -1,0 +1,13 @@
+Um T é de transporte, que define que vai ter sempre um cliente e um servidor e o protocolo vai definir como vão se conversar.
+
+Um cliente envia uma mensagem para o servidor e espera uma mensagem do servidor, recebe e trata essa mensagem, se desconectando do servidor. A resposta sempre vem do servidor. O cliente pode informar alguns dados (dependendo de como esta sendo feita a requisição). Quando a comunicação termina, existe a desconexão.
+
+- Protocolo sem estado
+
+    No momento que o cliente pede algo ao servidor e ele retorna, ele só vai retornar os dados que o cliente pediu. O servidor não guarda qualquer informação sobre os últimos pedidos daquele cliente e o cliente também informa para o servidor o que ele precisa.
+
+O cliente faz uma requisição (request), que vai no servidor e o cliente espera o servidor trabalhar. O servidor vai fazer um processamento, que vai mandar para o sistema, o sistema vai fazer seu processamento, que pode ser uma consulta no banco de dados, esperar o banco de dados fazer um retorno, preparar esse retorno no banco de dados de uma forma que o cliente entenda, passa para o servidor entregar, o servidor entrega como uma resposta (response).
+
+Durante o processo de request e response, o cliente fica esperando o servidor retornar, quanto tempo for necessário.
+
+Dependendo das configurações da aplicação, do servidor ou do cliente, pode ser que não dê tempo do servidor retornar a resposta completa, ai vem alguns erros no navegador.
