@@ -1,0 +1,44 @@
+Ele define aquelas mensagens que são trocadas entre o cliente e o servidor, mas têm algumas regras:
+
+- URL/URI (localizador uniforme de recursos)
+
+    Define exatamente onde vai encontrar alguma coisa.
+    É utilizado também como um endereço de API, um endpoint. Se quebrar um pouco esse endereço como:
+
+        https2/api.meempresa.com.br/v1/clientes?=nome
+
+            https = protocolo seguro
+
+            api.meempresa.com.br = host name (nome do servidor). É em que servidor aquele dado ta localizado.
+
+            api.meempresa.com.br/v1/clientes = PATH (caminho). Onde vai definir dentro do servidor onde está o que precisa.
+
+            ?=nome = query string. Informações extras que passa para o caminho para que ele consiga entregar corretamente os dados de acordo com o necessário, como: ordenação, algum filtro extra
+
+        URL é um tipo especial de URI. É um localizador uniforme. Como se tivesse olhando numa lista de endereços e ele é o nome da pessoa dizendo "ela mora naquele lugar"
+        URI é um identificador uniforme de recurso. É o que define que aquele recurso existe um lugar.
+        URN é o nome uniforme de recurso. Ela é muito pouco usada, principalmente em ambientes de protocolo http, mas se usa alguns tipos de serviços específicos, ela é usada porque ela vai definir o nome de um recurso, de um servidor, de um endereço e email. Ela vai definir alguma coisa na internet ou numa rede específica, não só um endereço.
+
+- Mét.odo (method)
+
+    Ele indica uma ação que tem que ser executada no servidor. Essa ação ela é de uma lista pré-definida de ações. É usado para definir exatamente o que precisa ser feito no servidor.
+
+        GET - vai obter alguma coisa
+        POST - vai enviar alguma coisa para o servidor
+
+    Vai usar um verbo pra falar pra fazer algo. Pode ter muitas vezes a mesma URL usando com 2 métodos diferentes:
+        Ter lista clientes em que se usa o GET, obtem os clientes e se usa o POST enviando um objeto de dados, grava um novo cliente.
+
+- Corpo (body)
+
+    Tem sempre um formato específico que tem que ser definido pela API e que o cliente tem que seguir.
+    O formato principal é o JSON. O cliente cria o conteúdo nesse formato e o servidor sabe processar.
+    Recebe também oss dados.
+    Sempre haverá um retorno, mesmo que vazio. Também vem em um formato padronizado.
+
+- Cabeçalho (header)
+
+    Levam informações relativas à requisição e à resposta.
+    Ajudam a controlar acessos, a entender quais são os dados que vai aceitar no retorno. Ajuda a identificar a mesma chamada ou a mesma estrutura de chamada entre diversas chamadas diferentes.
+    O tamanho do corpo que ta sendo retornado para poder validar se aquele corpo que ta chegando ta completo ou não.
+
