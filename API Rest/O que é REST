@@ -1,0 +1,26 @@
+Estilo de arquitetura de API (um conjunto de ideias que vão definir como recurso vai ser acessado na rede.
+
+Segue uma quantidades de regras, de ideias, que são comuns.
+
+Vão definir como é que um recurso tem que ser identificado, como que ele tem quer ser acessado, como ele tem que ser disponibilizado.
+
+Definir os recursos e em cima deles, vai definir usando protocolo HTTP e as regras para acessar essas informações.
+
+Cada endereço, é um recurso:
+
+    - https://api.empresay.com.br/pedidos
+
+    Operação:
+
+        GET https://api.empresay.com.br/pedidos
+        Obter a lista de pedidos
+
+        GET https://api.empresay.com.br/pedidos/12
+        Obter um pedido (12)
+
+        POST https://api.empresay.com.br/pedidos
+        Registrar um pedido
+
+Consegue definir que os endpoints fazem apenas um trabalho e que todos os dados referentes à chamada, vão ficar nos cabeçalhos e que os dados que são enviados para cada um dos endpoints dentro da API, os registros vão estar no corpo.
+
+Vai disciplinar o uso e a criação das APIs, usando algumas regras.
