@@ -1,0 +1,25 @@
+Arquitetura
+
+    - É o processo  de análise de requisitos e restrições e a criação de uma solução que atende os requisitos e está dentro das restrições.
+
+    - Definir também como vai resolver o problema.
+
+    - A API tem que servir como um encapsulamento para a regra de negócio. Para que apareça, para o cliente, o mínimo possível da regra de negócio e de como foio implementado, entregando só o que ele precisa saber.
+
+    - Pensar o que o cliente precisa para resolver o problema.
+
+    - Coloque na API a regra de que ela tem que se comportar como um componente que conecta de forma competente os usuários da API e a regra de negócio.
+
+    - Tem que saber o que mostrar para o cliente, mas não é ele muitas vezes que vai saber o que mostrar, só vai saber como.
+
+    - Analisar previamente alguns pontos:
+
+        - quais são os recursos que vai disponibilizar e, muitas vezes, qual  parte dos recursos.
+
+        - quais dados que vai entregar em qual formato?
+
+        - entender como a segurança vai ser implementada de acesso (se é aberto para todos, ou só para cliente).
+
+        - entender qual é a velocidade de retorno dos dados (desempenho esperado ou latência do retorno).
+
+        - ter uma estrutura coesa e inteligente de rotas, que é onde vai encontrar os dados.
