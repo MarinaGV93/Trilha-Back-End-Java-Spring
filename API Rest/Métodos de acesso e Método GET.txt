@@ -1,0 +1,41 @@
+São gerados automaticamentes
+
+Requisição
+
+    //GET - rota - usar o protocolo http
+    GET /clientes/12 HTTP 1.1
+    //Nome do servidor
+    Host: api.empresay.com.br
+    // Token de autorização
+    Authorization: 1234
+    // Só aceita respostas no formato application/json
+    Accept: application/json
+
+Resposta
+
+    // 200: código de status que define o que aconteceu com a chamada
+    HTTP/1.1 200 OK
+
+    // Quando aconteceu
+    Date: Sun, 10 December 2022, 11:12:13 GMT
+    // Qual é o tipo de conteudo que esta sendo retornado
+    Content-type: application/json
+    // Qual o tamanho do conteudo
+    Content-length: 36
+    // Quando foi a ultima vez que esse conteudo foi alterado
+    Last-Modified: Sun, 10 December 2022, 11:12:13 GMT
+
+    // Conteudo de retorno
+    {"nome": "Empresa Doze", "id": 12, "responsavel": "Marina Golao Vale"}
+
+Métodos
+
+    GET: Obter os dados de uma API
+
+    POST: Criar. Postar dados. Enviar informações para API, para registrar essas informações
+
+    PUT/PATCH: Efetuar alteração de dados. Se usa mais o PUT
+
+    DELETE: Excluir um dado
+
+    OPTION: Definir algumas configurações de acesso à chamada
