@@ -1,0 +1,15 @@
+O gerenciamento da sessão é importante e deve ser feito da forma mais segura.
+
+Não pode armazenar algum dado aberto ou algum dado criptografado que seja sensível
+
+O gerenciamento da sessão é feito de forma compartilhada entre o cliente e o servidor usando os cookies, mas também sempre validando se esses dados estão corretos.
+
+Como os browsers fazem as chamadas a API
+
+    Um browser carrega uma página e vai exibi-lá, carregando t odo o código, fazendo inúmeras chamadas. Internamente, o browser vai criar novas instâncias de requisições que o browser vai conseguir gerenciar.
+
+    O browser faz a chamada, o javascript pede pro browser, o browser faz a chamada, o browser retorna e ele entrega para o javascript essa chamada.
+
+    Se faz 120 chamadas para popular uma tela, internamente o browser esta criando 120 mini objetos de browser para fazer essa chamada, comendo mais memória e mais processamento, ficando lenta a máquina. Isso é uma caracteristica dos browsers.
+
+    Fazer inúmeras chamadas em uma API, pode fazer com que o cliente fique lento.
