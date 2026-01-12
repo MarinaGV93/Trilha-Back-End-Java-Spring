@@ -51,6 +51,30 @@ Antes de começar, você precisa ter instalado em sua máquina um editor para tr
 
 <br>
 
+## 📚 Aulas
+
+<!-- Tabela -->
+
+<div id="table" align="center">
+
+| Aulas | 
+| :----: | 
+| [Lives](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Aulas-live) |
+| [Curso Spring](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/cursospring) |
+| [Desenvolvimento Java Profissional](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Desenvolvimento%20Java%20profissional) |
+| [Primeira xicara de Java](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Primeira%20xicara%20de%20Java) | 
+| [API Rest](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/API%20Rest) |
+<!-- 
+| []() |
+| []() |
+| []() |
+-->
+
+</div>
+</div>
+
+<br>
+
 ## 📃 Licença
 
 <p>
