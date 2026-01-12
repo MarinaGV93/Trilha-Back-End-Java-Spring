@@ -1,0 +1,37 @@
+Status Code
+
+    "200 OK"
+
+    Identifica exatamente qual foi o tipo de resposta enviado pelo servidor
+
+    São organizados em classes. A classe é sempre o primeiro numero, o status code (3 numeros):
+
+        2xx: Código de sucesso.
+        3xx: Redirecionamento
+        4xx: Erros de cliente (que o cliente mandou algo errado)
+        5xx: Erros de servidor (erro de processamento do lado do servidor)
+
+Authorization
+
+    Usado para informar para o servidor quem esta acessando aquela informação. Serve como se fosse um crachá. Precisa ser informados em todas as chamadas que precisam ser restritas. Colocar informações de acesso de um cliente de forma criptografada.
+
+    Formato JWT
+
+        Ele permite que trafegue dados que conseguem ser validados de forma segura e ao mesmo tempo consegue trafegar dados de forma simples. Formato comum.
+
+Cookies
+
+    Muito útil para trafegar dados do cliente para o servidor e do servidor para o cliente, principalmente para poder manter uma sessão de uso.
+    São informações que ficam gravadas no cliente e que toda a chamada que faz ao servidor, informa para o servidor obter e o servidor também pode enviar cookies para o cliente sem que o cliente peça e esses cookies usualmente são armazenados pelo cliente e depois enviados novamente para o servidor.
+
+        Formato
+        // Nome do cookie=o valor do cookie
+            Cookie: lastVisit=20220919;preferences=nosave,nolog;sid=YWRhbWVsaG9yZXNjb2xhCg==
+
+        Campos disponíveis
+            // Ultima visita
+            lastVisit=20220919
+            // Preferencias
+            preferences=nosave,nolog
+            // Id da sessão
+            sid=YWRhbWVsaG9yZXNjb2xhCg==
