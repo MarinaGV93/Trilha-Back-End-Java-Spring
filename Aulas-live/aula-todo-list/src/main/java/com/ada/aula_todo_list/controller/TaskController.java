@@ -1,8 +1,8 @@
 package com.ada.aula_todo_list.controller;
 
-import com.ada.aula_todo_list.dto.ShareRequest;
-import com.ada.aula_todo_list.dto.TaskDTO;
-import com.ada.aula_todo_list.dto.TaskResponse;
+import com.ada.aula_todo_list.domain.dto.TaskDTO;
+import com.ada.aula_todo_list.domain.dto.request.ShareRequest;
+import com.ada.aula_todo_list.domain.dto.response.TaskResponse;
 import com.ada.aula_todo_list.service.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

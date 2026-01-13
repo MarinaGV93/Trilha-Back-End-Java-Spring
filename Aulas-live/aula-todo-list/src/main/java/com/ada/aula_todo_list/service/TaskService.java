@@ -1,9 +1,9 @@
 package com.ada.aula_todo_list.service;
 
-import com.ada.aula_todo_list.dto.TaskDTO;
-import com.ada.aula_todo_list.dto.TaskResponse;
-import com.ada.aula_todo_list.entity.Task;
-import com.ada.aula_todo_list.entity.User;
+import com.ada.aula_todo_list.domain.dto.TaskDTO;
+import com.ada.aula_todo_list.domain.dto.response.TaskResponse;
+import com.ada.aula_todo_list.domain.Task;
+import com.ada.aula_todo_list.domain.User;
 import com.ada.aula_todo_list.enums.Status;
 import com.ada.aula_todo_list.repository.TaskRepository;
 import com.ada.aula_todo_list.repository.UserRepository;

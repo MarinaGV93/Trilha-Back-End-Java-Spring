@@ -1,7 +1,7 @@
 package com.ada.aula_todo_list.service;
 
-import com.ada.aula_todo_list.dto.TodoItemDTO;
-import com.ada.aula_todo_list.dto.TodoListResponseDTO;
+import com.ada.aula_todo_list.domain.dto.TodoItemDTO;
+import com.ada.aula_todo_list.domain.dto.response.TodoListResponseDTO;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 

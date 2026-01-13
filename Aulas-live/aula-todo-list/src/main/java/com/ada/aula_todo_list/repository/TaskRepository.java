@@ -1,6 +1,6 @@
 package com.ada.aula_todo_list.repository;
 
-import com.ada.aula_todo_list.entity.Task;
+import com.ada.aula_todo_list.domain.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDateTime;

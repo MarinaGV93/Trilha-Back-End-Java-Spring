@@ -1,10 +1,13 @@
 package com.ada.aula_todo_list.service;
 
-import com.ada.aula_todo_list.dto.external.TodoListResponse;
-import com.ada.aula_todo_list.dto.external.UserListResponse;
-import com.ada.aula_todo_list.entity.Task;
-import com.ada.aula_todo_list.entity.User;
+import com.ada.aula_todo_list.domain.Employee;
+import com.ada.aula_todo_list.domain.Task;
+import com.ada.aula_todo_list.domain.User;
+import com.ada.aula_todo_list.domain.dto.external.EmployeeListResponse;
+import com.ada.aula_todo_list.domain.dto.external.TodoListResponse;
+import com.ada.aula_todo_list.domain.dto.external.UserListResponse;
 import com.ada.aula_todo_list.enums.Status;
+import com.ada.aula_todo_list.repository.EmployeeRepository;
 import com.ada.aula_todo_list.repository.TaskRepository;
 import com.ada.aula_todo_list.repository.UserRepository;
 import jakarta.annotation.PostConstruct;
@@ -20,14 +23,15 @@ import java.util.stream.Collectors;
 public class SeedService {
 
     private final WebClient webClient;
-    private final UserRepository userRepo;
-    private final TaskRepository taskRepo;
+    private final UserRepository userRepository;
+    private final TaskRepository taskRepository;
+    private final EmployeeRepository employeeRepository;
+
 
     @PostConstruct
     public void seed() {
         try {
-
-            //Buscar usuários
+            // fetch users
             UserListResponse users = webClient.get()
                     .uri("/users")
                     .retrieve()
@@ -43,28 +47,59 @@ public class SeedService {
                     user.setEmail(u.getEmail());
                     return user;
                 }).collect(Collectors.toList());
-                userRepo.saveAll(list);
+                userRepository.saveAll(list);
             }
 
-            //Obter listas de tarefas a cumprir e convertê-las em tarefas (mapeamento básico)
-            TodoListResponse todos = webClient.get().uri("/todos").retrieve().bodyToMono(TodoListResponse.class).block();
+            // fetch todos and convert to tasks (basic mapping)
+            TodoListResponse todos = webClient.get()
+                    .uri("/todos")
+                    .retrieve()
+                    .bodyToMono(TodoListResponse.class)
+                    .block();
 
-            if (todos != null && todos.getTodos() != null){
+            if (todos != null && todos.getTodos() != null) {
                 List<Task> tasks = todos.getTodos().stream().map(t -> {
                     Task task = new Task();
                     task.setTitle(t.getTodo());
                     task.setDescription(null);
                     task.setStatus(t.isCompleted() ? Status.DONE : Status.TODO);
                     task.setPublic(false);
-
-                    //Tente definir o proprietário se o usuário existir.
-                    userRepo.findById(t.getUserId()).ifPresent(task::setOwner);
+                    // try to set owner if user exists
+                    userRepository.findById(t.getUserId()).ifPresent(task::setOwner);
                     return task;
                 }).collect(Collectors.toList());
-                taskRepo.saveAll(tasks);
+                taskRepository.saveAll(tasks);
             }
         } catch (Exception ex) {
-            System.out.println("Errro: " + ex.getMessage());
+            System.out.println("Seed error: " + ex.getMessage());
+        }
+    }
+
+    //Carga dos funcionarios
+    @PostConstruct
+    public void seedEmployees() {
+        try {
+            EmployeeListResponse employeeListResponse = webClient.get()
+                    .uri("/users")
+                    .retrieve()
+                    .bodyToMono(EmployeeListResponse.class)
+                    .block();
+
+            if (employeeListResponse != null && employeeListResponse.getUsers() != null) {
+                List<Employee> employees = employeeListResponse.getUsers().stream().map(
+                        e -> {
+                            Employee employee = new Employee();
+                            employee.setId(e.getId());
+                            employee.setName(e.getFirstName());
+                            employee.setEmail(e.getEmail());
+                            return employee;
+                        }).toList();
+
+                employeeRepository.saveAll(employees);
+            }
+
+        } catch (Exception ex) {
+            System.out.println("Seed Employee error: " + ex.getMessage());
         }
     }
 }
