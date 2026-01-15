@@ -1,0 +1,15 @@
+
+ Entidade
+
+    Coisas que tem no mundo real
+    Representação de qualquer elemento que o sistema ou aplicação de software, usando no banco, precisa ter as informações que constituem essa coisa que está representando.
+
+Diagrama de entidade relacionamento
+
+    Usar a plataforma VisualParadigm
+
+        https://online.visual-paradigm.com/app/diagrams/#diagram:proj=0&type=ERDiagram&width=11&height=8.5&unit=inch
+
+    Toda tabela precisa ter um número único (id) que seja possível achar um registro dessa tabela
+
+    Coloca do lado do nome da coluna o tipo (- ...)
