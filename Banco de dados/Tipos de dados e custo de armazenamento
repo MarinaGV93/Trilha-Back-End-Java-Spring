@@ -1,0 +1,35 @@
+Tipos de dados
+
+    - Numéricos
+
+        Subdivididos em 2 tipos:
+
+            - Inteiros
+
+                Grave números que não tem fração
+
+            - Reais
+
+                Com frações, com divisões.
+
+        smallint - 2 bytes
+        integer - 4 bytes
+        bigint - 8 bytes
+        real - 4 bytes
+        double - 8 bytes
+
+    - Textos
+
+        char - 1 bit por caractere com limite
+        varchar - Tamanho fixo
+        text - Tamanho indeterminado
+
+    - Data
+
+        date - marca o dia, mas não o instante (minuto)
+        time - marcam o intervalo de tempo. Time zone - fuso horário
+
+    - Booleano
+
+        verdadeiro
+        falso
