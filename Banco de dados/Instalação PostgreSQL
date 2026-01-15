@@ -1,0 +1,7 @@
+Instala o PostgreSQL:
+
+    https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+    Abre o pgAdmin com a senha criada
+
+    Abra a pasta Servers > PostgreSQL 14 (ou a versao instalada) > Databases. Se  abrir, a instalação funcionou
