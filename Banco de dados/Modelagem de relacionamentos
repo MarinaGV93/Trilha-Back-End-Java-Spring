@@ -1,0 +1,25 @@
+Relacionamento entre as entidades
+
+Como as tabelas interagem entre si.
+
+Precisa colocar uma chave estrangeira (Foreign Key) de uma tabela relacionando com a outra.
+
+Podem ser de alguns tipos:
+
+    1 para 1:
+
+        1 aluno sempre esta vinculado com 1 matricula e 1 matricula é sempre de 1 aluno
+
+        Associação direta
+
+    1 para N (muitos):
+
+        1 aluno sempre esta em 1 turma, mas 1 turma tem N alunos
+
+    N para N:
+
+        1 professor tem N alunos e 1 aluno vai ter N professores
+
+Normalização dos dados
+
+    Extrair o dado para uma tabela que tenha a relação dos alunos com os professores (tabela auxiliar)
