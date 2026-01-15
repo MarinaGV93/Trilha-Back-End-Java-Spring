@@ -10,6 +10,6 @@ Diagrama de entidade relacionamento
 
         https://online.visual-paradigm.com/app/diagrams/#diagram:proj=0&type=ERDiagram&width=11&height=8.5&unit=inch
 
-    Toda tabela precisa ter um número único (id) que seja possível achar um registro dessa tabela
+    Toda tabela precisa ter um número único (id) que seja possível achar um registro dessa tabela. Precisa ser como Primary Key
 
     Coloca do lado do nome da coluna o tipo (- ...)
