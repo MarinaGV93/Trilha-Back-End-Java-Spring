@@ -1,0 +1,31 @@
+Formas normais
+
+    Buscam garantir qualidade dos dados
+
+    Tabela aulas_forma_0
+
+    1FN
+
+        Cada atributo deve conter apenas um valor correspondente em um dado registro (uma linha da coluna)
+
+        Tabela aulas_forma_1
+
+    2FN
+
+        Cada elemento da tabela deve depender apenas da sua chave primária
+        Reduz redundância
+
+        Tabela formato_preco
+        Tabela aulas_forma_2
+
+    3FN
+
+        Além de estar na 2FN, um elemento não chave da tabela, não pode depender de outro elementos não chave.
+
+        Tabela cursos
+        Tabela aulas_forma_3
+
+    3,5FN (Boyce-Codd)
+
+        É a mais usada no mercado
+        A tabela não pode ter mais uma chave candidata (um campo que identifica o registro)

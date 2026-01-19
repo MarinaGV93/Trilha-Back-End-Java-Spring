@@ -1,0 +1,5 @@
+nome_da_aula,formatos,professor_da_aula,precos,id_do_curso,nome_do_curso
+banco de dados relacional,digital,Tiago,89.99,1,banco de dados
+banco de dados relacional,presencial,Tiago,189.99,1,banco de dados
+python para machine learning,digital,Jorge,99.99,2,python
+python para machine learning,presencial,Jorge,199.99,2,python
