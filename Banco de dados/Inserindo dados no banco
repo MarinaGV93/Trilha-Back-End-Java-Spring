@@ -1,0 +1,30 @@
+insert into
+    //Nome da tabela
+    disciplinas values(
+        ///Preencher os dados, conforme os campos
+        1,'portugues','literatura e gramatica'
+    )
+
+    Inserir um registro multiplo
+
+        insert into disciplinas values
+        (2,'matematica','algebra e geometria'),
+        (3,'fisica','cinematica e dinamica');
+
+    Importar dados de um csv
+
+        copy
+            //Nome da tabela que vai receber os dados
+            disciplinas(
+                //Colunas
+                id_disciplina, nome, ementa
+            )
+            from
+                //O caminho do arquivo
+                'C:\Users\marin\Documents\MEGA\Projetos\Clones\Trilha-Back-End-Java-Spring\Banco de dados\disciplinas.csv'
+                delimiter
+                    //Delimitador. O que separa as linhas e colunas
+                    ','
+
+                    //A primeira linha joga fora, porque só é o cabeçalho, nomes das colunas
+                    csv header
