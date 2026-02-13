@@ -1,0 +1,24 @@
+Permissões
+
+    Ao criar a tabela, na aba Security, pode colocar privilégios
+
+Visualizações
+
+    É uma mascara que joga em cima da tabela
+
+        create view
+            //Nome qualquer
+            matricula_com_sigilo as (
+                select
+                    //Escolhe as colunas que apareça
+                    id_matricula,
+                    id_aluno,
+                    validade
+                 from
+                    //Nome da tabela
+                    matricula
+            )
+
+        Ela funciona como uma tabela. Pode visualizar com:
+
+            select * from matricula_com_sigilo
