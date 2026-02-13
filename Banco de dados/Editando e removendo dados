@@ -1,0 +1,19 @@
+Editar
+
+    update
+        //Nome da tabela
+        disciplinas set
+        //Nome do campo e o valor corrigido
+        nome = 'biologia'
+        //Fazer um filtro
+        where
+            //Identificador da linha
+            id_disciplina = 7
+
+Excluir
+
+    delete from
+        //Nome da tabela
+        disciplinas
+        //Filtro
+        where id_disciplina = 8
