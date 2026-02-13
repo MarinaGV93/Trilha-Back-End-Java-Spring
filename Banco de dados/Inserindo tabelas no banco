@@ -1,0 +1,21 @@
+Em pgAdmin
+
+    Servers > PostgreSQL > Databases> postgres > Schemas > public >  Tables > Clica com direito em em Create > Table...
+
+    Ou por Query
+
+        Na query tool (ALT + SHIFT + Q)
+
+            create table professores(
+                id_professor integer,
+                celular varchar(14),
+                nome varchar(40),
+                //Relacionamento com 'disciplina'
+                id_disciplina integer,
+                //Chave primaria
+                primary key (id_disciplina),
+                //Chave estrangeira
+                foreign key (id_disciplina)
+                //Qual coluna desa tabela se relaciona com a tabela de disciplinas
+                references disciplinas(id_disciplina)
+            )
