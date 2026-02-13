@@ -21,4 +21,4 @@ Visualizações
 
         Ela funciona como uma tabela. Pode visualizar com:
 
-            select * from matricula_com_sigilo
+            select * from matricula_com_sigil
