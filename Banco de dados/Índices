@@ -1,0 +1,13 @@
+Uma estratégia para otimizar a busca.
+
+Usa uma arvore binária, que é uma das estrategias
+
+Se usa em uma tabela que seja grande e que nao grave muito e sim que lê muito dado.
+
+Criar um índice:
+
+    create index
+        //Colocar um nome qualquer
+        idx_nome on
+            //Tabela em que vai ser criado e a (coluna)
+            disciplinas(nome)
