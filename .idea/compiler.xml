@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Desenvolvimento_Java_profissional" />
+        <module name="Programacao_dinamica" />
       </profile>
       <profile name="Annotation profile for curso-spring" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,20 +17,12 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="curso-spring" />
-      </profile>
-      <profile name="Annotation profile for todo-list-api" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
-        </processorPath>
         <module name="aula-todo-list" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="API_Rest" target="21" />
+      <module name="Programacao_Dinamica" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -8,11 +8,14 @@
         <option value="$PROJECT_DIR$/cursospring/pom.xml" />
         <option value="$PROJECT_DIR$/Desenvolvimento Java profissional/pom.xml" />
         <option value="$PROJECT_DIR$/API Rest/pom.xml" />
+        <option value="$PROJECT_DIR$/Programacao Dinamica/pom.xml" />
+        <option value="$PROJECT_DIR$/Aulas-live/Programação dinâmica/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/API Rest/pom.xml" />
+        <option value="$PROJECT_DIR$/Programacao Dinamica/pom.xml" />
       </set>
     </option>
   </component>

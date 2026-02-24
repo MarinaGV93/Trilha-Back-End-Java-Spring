@@ -1,0 +1,16 @@
+Dividir problemas complexos em subproblemas menores.
+
+Evitar cálculos repetidos
+
+- Recursão
+
+    Que chama ele próprio
+
+- Top up (De baixo para cima)
+
+     Começa do topo do problema e vai quebrando ele de forma recursiva até chegar no caso básico.
+     Intercepta chamadas, antes de calcular qualquer coisa, já checa se o resultado já está em alguma estrutura, que nesse caso (Fibonacci) é uma estrutura de dados.
+
+
+
+
