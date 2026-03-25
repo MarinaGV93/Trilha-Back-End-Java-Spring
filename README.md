@@ -1,5 +1,4 @@
 <h1 id="title" align="center">
-  <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEJ9in0-PezNg/company-logo_200_200/company-logo_200_200/0/1659466659059/letscodebr_logo?e=1767830400&v=beta&t=-nS5ECxrcmzQ7wldgBmv3t_z52-P8wdNve9UN5Bbs-E" width="45px"/> 
   Elas + Tech - Ada & Artemisia | Back-End 
 </h1>
 
@@ -65,6 +64,7 @@ Antes de começar, você precisa ter instalado em sua máquina um editor para tr
 | [Primeira xicara de Java](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Primeira%20xicara%20de%20Java) | 
 | [API Rest](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/API%20Rest) |
 | [Banco de dados](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Banco%20de%20dados) |
+| [Git e Versionamento](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Primeira%20xicara%20de%20Java/Git%20e%20Versionamento) |
 <!--
 | []() |
 | []() |
