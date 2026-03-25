@@ -1,0 +1,30 @@
+Branchs
+
+    Ramificações no código
+
+    Pode criar mais de uma branch para outros desenvolvedores para depois unir
+
+Git branch 'nome'
+
+    Criar uma nova branch
+
+Git branch
+
+    Lista as branches e mostra qual o atual
+
+Git log --oneline --decorate
+
+    Indica qual o branch atual, pelo HEAD (ponteiro)
+
+    Para sair
+
+        q
+
+Git checkout 'nome'
+
+    Muda para o branch indicado
+
+.gitignore
+
+    Adiciona o que quer ignorar
+

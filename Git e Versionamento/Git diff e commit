@@ -1,0 +1,22 @@
+Git diff
+
+    Mostra as linhas modificadas do arquivo
+
+    No repositorio local
+
+        git diff origin (repositorio remoto)/master (branch)
+
+Git diff --staged
+
+    Mostra as linhas modificadas do arquivo que foram adicionadas na área de staging
+
+    Para sair do modo de diff
+
+        q
+
+Git commit
+
+    Grava as mudanças no repositório com uma men
+
+        git commit -m "Mensagem"
+

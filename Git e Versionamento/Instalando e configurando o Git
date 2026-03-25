@@ -1,0 +1,11 @@
+Configuração
+
+        Após a instalação, o Git pede o nome do usuário e o email do usuário:
+
+            git config --global user.name "Seu nome"
+
+            Aperta enter
+
+            git config --global user.email "seu.email@email.com"
+
+            Aperta enter

@@ -1,0 +1,20 @@
+Git remote
+
+    Mostra os repositórios remotos
+
+Git push
+
+    Envia os commits para o repositório remoto
+
+        git push origin (repositorio remoto) master (branch)
+
+Git pull
+
+    Puxa os commits do repositório remoto e faz um merge local, que junta o código com o que tinha no repositório remoto
+
+        git pull origin (repositorio remoto) master (branch)
+
+Git fetch
+
+    Puxa os commits do repositório remoto, mas não faz merge
+

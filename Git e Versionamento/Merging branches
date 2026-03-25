@@ -1,0 +1,9 @@
+Unir branches
+
+Vai para a branch que quer receber a diferença que existe para a outra branch
+
+Git merge 'nome'
+
+    Une as branches com o nome da branch que quer trazer
+
+Quando foi modificado a mesma linha em ambas as branches, pode causar conflito, pedindo para resolver, ignorando a mudança do outro, ignorando a sua mudança ou mesclando os dois e alterando manualmente

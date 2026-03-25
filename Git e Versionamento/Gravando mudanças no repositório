@@ -1,0 +1,11 @@
+Git status
+
+    Mostra a branch atual, arquivos modificados e arquivos novos.
+
+    Mostra que tem mudanças (arquivos modificados ou novos) que não foram passadas pra área de Staging
+
+Git add
+
+    Ele adiciona os arquivos modificados ou novos pra área de Staging
+
+        git add "nome do arquivo"

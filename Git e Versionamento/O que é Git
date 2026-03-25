@@ -1,0 +1,11 @@
+Versionamento
+
+    Registro de mudanças em arquivos, que possibilita recuperação ou acesso a versões anteriores
+
+    Desenvolvimento de código em colaboração com outros desenvolvedores
+
+Git
+
+    Um sistema de versionamento de código, que guarda os registros de versão como fotos do estado do projeto (hash), além da referência/caminho para essa foto
+
+    A maioria das operações feitas pelo Git são locais e por isso boa parte das operações são praticamente instantâneas devido à facilidade de acessar arquivos em seu proprio PC.

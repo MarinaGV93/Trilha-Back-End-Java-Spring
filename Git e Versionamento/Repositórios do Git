@@ -1,0 +1,11 @@
+Para clonar
+
+    No código do github, clique em 'Code' e em 'HTTPS', copia o link e, com o terminal aberto no diretório desejado, digite o comando:
+
+        git clone "link"
+
+Transformar em repositório git
+
+    Crie uma pasta e abre com o VSCode. Inicialize o repositório com o comando:
+
+        git init

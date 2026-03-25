@@ -1,0 +1,23 @@
+Git log
+
+    Mostra o histórico de commits
+
+    Hash
+
+        A parte logo depois de 'commit'
+
+        É assim que o Git identifica o commit
+
+    Sair do git log:
+
+        q
+
+Git restore
+
+    Retornar arquivos modificados, desfaz as alterações
+
+        git restore "nome do arquivo"
+
+    Voltar para o estado de modificação
+
+        git restore --staged "nome do arquivo"
