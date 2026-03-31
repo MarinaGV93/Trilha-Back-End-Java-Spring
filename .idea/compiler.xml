@@ -2,12 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Desenvolvimento_Java_profissional" />
         <module name="Programacao_dinamica" />
+        <module name="Design_Patterns_em_Java" />
       </profile>
       <profile name="Annotation profile for curso-spring" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -22,6 +24,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="API_Rest" target="21" />
+      <module name="Design Patterns em Java" target="21" />
+      <module name="Design_Patterns_em_Ja11va111" target="21" />
       <module name="Programacao_Dinamica" target="21" />
     </bytecodeTargetLevel>
   </component>
