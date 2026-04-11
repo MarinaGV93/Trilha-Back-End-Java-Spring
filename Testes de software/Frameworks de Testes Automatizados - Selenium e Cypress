@@ -1,0 +1,74 @@
+Selenium
+
+    É uma ferramenta de automação de testes de interface de usuário para aplicações we,
+    Ele permite a automação de ações em um navegador web como clicar botões, preencher formulários, navegar em páginas e verificar o comportamento da aplicação.
+    Suporta várias linguagens de programação, incluindo Java, e é amplamente utilizado para testar aplicações web em diferentes plataformas e navegadores.
+
+    Componentes
+
+        - Selenium IDE: uma extensão do navegador que permite gravar, editar e reproduzir scripts de teste diretamente no navegador.
+        - Selenium WebDrive: uma API que permite a interação programática com o navegador, permitindo que os desenvolvedores escrevam scripts de testee em sua linguagem de programação preferida, como Java, Python, JavaScript, C#, entre outras.
+        - Selenium Grid: uma ferramenta que permite a execução de testes em paralelo em vários navegadores e plataformas, melhorando a eficiência e a cobertura dos testes.
+
+    Selenium WebDrive
+
+        Funciona enviando comandos para um navegador web através de um driver específico para cada navegador.
+        O driver atua como uma ponte entre o código de teste e o navegador, traduzindo os comandos do WebDriver para ações reais no navegador.
+
+    Como escrever testes com Selenium
+
+        - Configuração do ambiente: instalar o Selenium WebDrivee configurar o ambiente de desenvolvimento com as dependências necessárias.
+        - Escrever testes: escrever scripts de teste utilizando APIss do Selenium WebDrive para realizar as ações desejadas no navegador, como clicar em elementos, preencher formulários e verificar o comportamento da aplicação.
+        - Executar testes: executar os scripts de teste em um navegador, seja localmente ou através de um ambiente de teste remoto, como o Selenium Grid.
+        - Analisar resultados: analisar os resultados dos testes para identificar problemas e regressões, e tomar as medidas necessárias para corrigir os problemas encontrados.
+
+    Vantagens
+
+        - Suporte a múltiplos navegadores: oferece suporte a vários navegadores, incluindo Chrome, Firefox, Safari, Edge, entre outros.
+        - Suporte a múltiplas linguagens: é suportado por várias linguagens de programação, incluindo Java, Python, JavaScript, C#, entre outras.
+        - Ampla comunicação e documentação: possui uma grande comunidade de usuários e uma extensa documentação disponível, o que facilita a aprendizagem e solução de problemas.
+        - Flexibilidade e customização: é altamente flexível e pode ser customizado para atender às necessidades específicas de automação de teste de diferentes projetos e equipes.
+
+Cypress
+
+    É uma ferramenta de automação de testes de interface de usuario para aplicações web
+    Oferece uma experiência de teste moderna e poderosa, permitindo que os desenvolvedores escrevam, rode e depurem testes de forma fácil e rápida
+    É conhecido por sua simplicidade, velocidade e robustez para testes em javascript
+
+    Características
+
+        - Execução no navegador: executa testes diretamente no navegador, o que significa que os testes tem acesso direto ao DOM da aplicação em execução
+        - Sintaxe simples e intuitiva: possui uma sintaxe simples e intuitiva, o que facilita a escrita e manutenção dos testes
+        - Testes em tempo real: oferece testes em tempo real, permitindo que os desenvolvedores veja exatamente o que esta acontecendo em cada etapa do teste
+
+    Como escrever testes
+
+        - Instalação do Cypress: instalar no projeto utilizando npm ou yarn
+        - Estrutura de arquivos: organizar os testes em uma estrutura de arquivos e pastas, seguindo as convenções do Cypress
+        - Escrever testes: escrever os testes utilizando a API do Cypress para interagir com a aplicação e realizar asserções
+        - Executar testes: executar os testes utilizando o comando cypress run ou cypress open para abrir a interface gráfica do Cypress
+
+    Vantagens
+
+        - Sintaxe simples e intuitiva: possui uma sintaxe simples e intuitiva, o que facilita a escrita e manutenção dos testes
+        - Rápida execução de testes: é conhecido por sua rápida execução de testes, o que acelera o processo de desenvolvimento e teste
+        - Testes em tempo real: oferece testes em tempo real, permitindo que os desenvolvedores veja exatamente o que esta acontecendo em cada etapa do teste
+        - Ferramentas de depuração integradas: possui ferramentas de depuração integradas, o que facilita a identificação e correção de problemas nos testes
+
+Semelhanças
+
+    - Automatização de testes de interface de usuario: utilizados para automatizar a interação com aplicações web via navegador
+    - Suporte a diferentes browsers: ambos suportam a execução de testes em vários navegadores, como Chrome, Firefox e Safari
+    - Estrutura de teste: fornecem estrutura para escrever e organizar testes de interface de usuario, incluindo suporte para asserções e configurações
+
+Diferenças
+
+    - Arquitetura e modelo de execução:
+        Selenium: arquitetura cliente-servidor com comandos enviados a um navegador remoto via WebDriver
+        Cypress: executa testes diretamente no navigator, resultando em execução mais rápida e confiavel
+    - API e sintaxe:
+        Selenium: API baseada em WebDriver, exige mais código para tarefas simples
+        Cypress: API mais simples e intuitiva
+    - Suporte a testes paralelos:
+        Selenium: requer configurações adicionais para testes em paralelo
+        Cypress: suporte nativo a testes paralelos, permitindo execução eficiente

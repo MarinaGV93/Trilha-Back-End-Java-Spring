@@ -1,0 +1,39 @@
+O que são testes de software?
+
+    Um processo de verificação para garantir que o software que está sendo construído atenda as expectativas e aos requisitos estabelecidos.
+
+Por que precisa?
+
+    Para garantir a qualidade, identificar e corrigir erros, melhorar a segurança, aumentar a confiabilidade e satisfazer os requisitos estabelecidos.
+
+Objetivos
+
+    - Identificar defeitos
+
+        Testes nos ajudam a encontrar problemas no código, como bugs ou falhas de  funcionamento.
+
+    - Verificar requisitos
+
+        Os testes nos permitem garantir que o software atenda aos requisitos estabelecidos.
+
+    - Reduzir riscos
+
+        Ao detectar e corrigir defeitos antes do lançamento, reduzimos o risco de problemas graves e insatisfaçao dos usuarios.
+
+Pirâmides de testes
+
+    É um modelo para garantir eficiência e qualidade no desenvolvimento de software.
+
+    3 camadas de testes:
+
+    1º - Teste de Unidade (Unit)
+
+        Vai testar o menor trecho de código possível, normalmente uma função, algo específico
+
+    2º - Teste de integração (Service)
+
+        Testar se as funções estao se comunicando. Pode ser integrações de API, entre funções...
+
+    3º - Teste de ponta a ponta (end-to-end (E2E), UI ou teste de interface)
+
+        Testa desde o usuario interagindo com o sistema.

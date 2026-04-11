@@ -1,0 +1,31 @@
+É uma estrutura de software que fornece um conjunto de ferramentas, padrões e convenções para facilitar a criação, execução e análise de testes automatizados.
+Oferece suporte para diversas tarefas relacionadas aos testes, como organização de testes, execução em massa, relatórios de resultados e integração com outras ferramentas de desenvolvimento.
+
+Componentes
+
+    Biblioteca de Assertions - Fornece métodos para verificar se o comportamento do software esta conforme o esperado durante os testes:
+
+        Junit: Embora seja principalmente um framework de teste de unidade, também fornece um conjunto de asserções basicas, como assertEquals, assertTrue, assertFalse entre outros:
+
+            //Depois de chamar o 'criação pessoa', crie um objeto Pessoa desse formato (tipo) com esses dados
+            Pessoa.assertEquals...
+
+        API de execução de testes - Fornece métodos para definir, organizar e executar testes automatizados:
+
+            Spring Test: O Spring Framework inclui um módulo de teste que fornece uma API de execução de testes para testes de integração e unidade em Spring. Ele oferece suporte para carregamento de contexto, transações, injeção de dependência e outros recursos do Spring durante os testes.
+
+        Relatórios de testes - Gera relatórios detalhados sobre os resultados dos testes, incluindo estatisticas de cobertura, métricas de qualidade de código e falhas encontradas:
+
+            Junit: Oferece recursos integrados para geração de relatórios de testes em formato HTML, XML e texto simples. Os relatórios incluem informações sobre testes passados, falhas e tempo de execução.
+
+    Exemplos:
+
+        - Junit (Java)
+        - NUnit (.NET)
+        - xUnit
+        - Jest (JavaScript)
+        - Selenium (Web)
+        - Cypress (Web)
+
+São ferramentas poderosas que ajudam a automatizar e organizar os testes de software.
+Simplificam o processo de teste, aumentam a eficacia e a confiabilidade dos testes e permitem identificar e corrigir problemas mais rapidamente durante o desenvolvimento de software.

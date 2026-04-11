@@ -1,0 +1,69 @@
+São abordagens sistemáticas para planejar, executar e avaliar testes de software. Incluem praticas, processos e tecnicas que ajudam a garantir a qualidade do software ao longo de t odo ciclo de vida de desenvolvimento.
+
+TDD (Test-Driven Development/Desenvolvimento Orientado por Testes)
+
+    É uma abordagem de software onde os testes são escritos antes mesmo de desenvolver o código. O ciclo segue 3 passos:
+
+        1º - Escrever um teste que falhe (Red)
+        2º - Escrever um codigo para passar no teste (Green)
+        3º - Refatorar o codigo para melhorar a estrutura (Refactor)
+
+        Beneficios:
+
+            - Maior qualidade do código
+            - Feedback rápido
+            - Redução de bugs
+            - Maior confiança nas alterações
+            - Design incremental e iterativo
+            - Foco nos requisitos
+
+BDD (Behavior Driven Development/Desenvolvimento Orientado por Comportamento)
+
+    É uma abordagem que se concentra na colaboração entre desenvolvedores, testers e da área de negocios.
+    Se concentra em descrever o comportamento do software em termos de cenários de uso.
+    Uma ferramenta muito utilizada para essa metodologia é o Cucumber.
+
+    Cenário 1: Login de usuário
+
+        Given (dado) (contexto): Dado que um usuario esta na pagina de login
+        When (quando) (ação): Quando ele insere seu nome de usuario e senha corretos
+        Then (então) (resultado): Então ele deve ser redirecionado para a pagina inicial.
+        And (e) (outro resultado/resultado composto): E ele deve ver uma mensagem de boas vindas
+
+    Cenário 2: Adição de item ao carrinho de compras
+
+        Given: Dado que um usuario esta navegando na loja online
+        When: Quando ele seleciona um item e o adiciona ao carrinho de compras
+        Then: Então o item deve aparecer no carrinho com nome, preço e quantidade corretos
+
+        Beneficios:
+
+            - Colaboração entre as partes interessadas
+            - Documentação viva e legivel
+            - Foco no comportamento do usuario final
+            - Refatoração segura
+
+TDD x BDD
+
+    Semelhanças:
+
+        - Baseada em testes: ambas visam criar testes antes do codigo
+        - Iterativas: ciclos curtos de desenvolvimento e ajustes contínuos
+        - Foco em qualidade: focam em diminuir a quantidade de bugs e melhorar a qualidade do software
+
+    Diferenças:
+
+        - Foco dos testes:
+            TDD: foca na logica do código
+            BDD: foca no comportamento do sistema
+
+        - Linguagem:
+            TDD: linguagem técnica
+            BDD: linguagem natural
+
+        - Objetivo:
+            TDD: é mais tecnico
+            BDD: envolve mais colaboração da área de negocios
+
+
+

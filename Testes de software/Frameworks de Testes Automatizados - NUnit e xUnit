@@ -1,0 +1,45 @@
+NUnit
+
+    É um framework de teste de unidade para a plataforma .NET.
+
+    Fornece uma estrutura poderosa e flexível para escrever e executar testes automatizados em código C#, VB.NET e outras linguagens que rodam na plataforma .NET.
+
+    Como funciona
+
+        - [Test] - Indica um método de teste
+        - [TestCase] - Indica um método de teste parametrizado
+        - [Setup] - Indica um método a ser executado antes de todos os testes dentro de uma classe
+        - [TearDown] - Indica um método a ser executado após todos os testes terem sido concluídos dentro de uma classe.
+        - Assert.AreEqual
+        - Assert.AreNotEqual
+        - Assert.True
+        - Assert.False
+        - Assert.IsNull
+        - Assert.Throws
+
+xUnit
+
+    É uma biblioteca de código aberto usada na realizaçao de testes unitarios focados na comunidade para o .NET.
+
+    Surgiu a partir da 2ª versao de NUnit, já que os criadores desta última ferramenta buscavam um recurso mais amplo qua o já criado
+
+    Como funciona
+
+        - [Fact] - Indica um método de teste
+        - [InlineData]/[Theory] - Indica um método de teste parametrizado
+        - Construtor de classe - Método a ser executado antes de todos os testes dentro de uma classe
+        - IDisposable - Método a ser executado após todos os testes terem sido concluídos dentro de uma classe (implementado no método Dispose)
+        - Assert.Equal
+        - Assert.NotEqual
+        - Assert.True
+        - Assert.False
+        - Assert.Null
+        - Assert.Throws
+
+Semelhanças
+
+    - Estrutura de teste: Ambos organizam testes em classes e métodos, proporcionando clareza e consistencia
+    - Métodos de Asserção: Ambos oferecem métodos de asserção para validar resultados, garantindo que o código funcione como esperado
+    - Suporte a parametrização: Permitem executar testes com diferentes conjuntos de dados, facilitando a verificação de várias condições
+    - Integração com ferramentas de Build: Ambos são compatíveis com ferramentas como Maven, Gradle e Jenkins, integrando testes ao desenvolvimento
+    - Comunicação ativa: Possuem comunidades ativar que oferecem suporte e recursos, contribuindo para a evolução dos frameworks

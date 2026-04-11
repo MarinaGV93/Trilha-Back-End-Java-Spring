@@ -1,0 +1,34 @@
+ATDD (Acceptance Test Driven Development/Desenvolvimento Orientado por Testes de Aceitação)
+
+    Envolve a colaboração entre desenvolvedores, QAs e área de negócio para definir e validar os critérios de aceitação do software.
+    Ele se concentra em escrever testes de aceitação antes da implementação do código.
+
+    Diferença entre Teste Unitario:
+
+        Enquanto o teste unitario esta relacionado apenas com o codigo que é uma visao interna do sistema, o teste de aceitação esta voltado ao ponto de vista do usuario, uma visao externa do sistema.
+
+    O TDD fica dentro do ATDD.
+
+Mutation Testing
+
+    É uma técnica de teste de software que envolve introduzir mutações (ou pequenas alterações) no código para avaliar a eficácia dos testes existentes em detectar essas mutações.
+
+    Cenario: Uma função que calcula o desconto de um produto
+
+        calcularDesconto(double preco, double desconto){
+            return preco  - (preco * desconto);
+        }
+
+        Mutação: Trocar - por +
+
+        Efeito nos testes: Um teste eficiente deveria falhar com essa mutação, pois o cálculo do preço final com desconto estaria incorreto. Essa mutação verifica se os testes são robustos o suficiente para detectar falhas nas operações básicas.
+
+        Benefícios:
+
+            - Melhoria na qualidade dos testes
+            - Identifica lacunas
+            - Promove testes mais robustos
+            - Incentiva boas práticas de teste
+
+Juntos, eles promovem qualidade e confiabilidade no desenvolvimento de software.
+

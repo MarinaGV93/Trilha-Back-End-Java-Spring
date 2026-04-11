@@ -1,0 +1,39 @@
+Fornece uma estrutura robusta e flexível para escrever e executar testes automatizados em código Java.
+
+Facilita a verificação se o código está funcionando conforme o esperado e ajuda a identificar possíveis bugs durante o desenvolvimento.
+
+Por que é importante?
+
+    Permite que os desenvolvedores escrevam testes automatizados que podem ser executados de forma rápida e fácil, garantindo a qualidade do código.
+
+    Promove praticas de desenvolvimento ágil, como teste de unidade e refatoração contínua, facilitando a colaboração e a entrega de software de alta qualidade.
+
+Estrutura
+
+    @Before - executar antes do primeiro teste
+    @Test - teste
+    @After - executa outra ação para os testes. Pode fazer um tratamento ou um relatório
+    Assert - guardada todas as configurações e APIs do Junit
+    JUnitCore - guardada todas as configurações e APIs do Junit
+
+Exemplos
+
+    Arquivo teste-calculadora
+
+Melhores praticas e dicas
+
+    É importante seguir algumas praticas recomendadas, como:
+
+        - Manter os testes pequenos
+        - Independentes e rapidos
+        - Usar nomes descritivos para os metodos de teste
+        - Seguir o padrão AAA (Arrange, Act, Assert)
+        - Aprender sobre testes parametrizados
+
+AAA (Arrange, Act, Assert)
+
+    1 - Arrange (Preparar): Nesta etapa, você configura o ambiente de teste, preparando todos os objetos e dados necessários para executar o teste. Isso pode incluir a criação de objetos, a definição de valores iniciais e a configuração de qualquer  estado necessario para o teste.
+
+    2 - Act (Agir): Aqui você executa a operação ou ação que deseja testar. Este é o ponto em que o comportamento sendo testado é acionado, normalmente chamando oo método ou função específica da classe que esta sendo testada.
+
+    3 - Assert (Verificar): Nesta etapa, você verifica se o comportamento esperado ocorrei corretamente durante o teste. Faz isso usando assertions para verificar os resultados da operação realizada na etapa de "Agir" em relação ao comportamento esperado.

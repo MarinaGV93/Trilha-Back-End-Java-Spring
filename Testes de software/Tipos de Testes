@@ -1,0 +1,41 @@
+Testes unitários
+
+    Uma prática de desenvolvimento de software onde pequenas unidades individuais do código, como funçoes e metodos, sao testados para garantir que estão funcionando corretamente.
+
+    Beneficios:
+
+        - Identificação em pates específicas do codigo
+        - Execução rápida
+        - Explica como cada função deve se comportar
+        - Facilitam na manutenção e refatoração
+        - Correção de bugs na raiz do problema
+
+Testes de integração
+
+    Testam um conjunto de unidades interagindo entre si. Alguns casos comuns:
+
+        - Testes de comunicação com o banco de dados
+        - Comunicação de interfaces
+        - APIS
+        - Microsserviços
+
+    Benefícios:
+
+        - Sinergia, garantem que as diferentes partes do sistema funcione corretamente juntas.
+        - Fornecem confiança na integridade e na funcionalidade do sistema como um t odo.
+        - Confiança na interação entre cada componente.
+        - Detecção de erros de comunicação entre serviços e módulos
+
+Testes de interface (UI/End-To-End)
+
+    Testes de interface são testes que verificam a funcionalidade da interface do usuario, enquanto testes end-to-end verificam t odo o fluxo de uma aplicação, desde a entrada do usuario ate a saida esperada.
+
+    Benefícios:
+
+        - Validação completa do fluxo do usuario
+        - Detecção de falhas visíveis
+        - Validação de funcionalidades complexas
+        - Identificação de problemas de desempenho
+        - Garantia da experiencia do usuario
+        - Aumento da confiança na qualidade do software
+        - Validação da implementação dos requisitos

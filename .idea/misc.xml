@@ -12,12 +12,16 @@
         <option value="$PROJECT_DIR$/Aulas-live/Programação dinâmica/pom.xml" />
         <option value="$PROJECT_DIR$/Builder/pom.xml" />
         <option value="$PROJECT_DIR$/Design Patterns em Java/pom.xml" />
+        <option value="$PROJECT_DIR$/Junit/pom.xml" />
+        <option value="$PROJECT_DIR$/teste-calculadora/pom.xml" />
+        <option value="$PROJECT_DIR$/testSelenium/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/API Rest/pom.xml" />
         <option value="$PROJECT_DIR$/Programacao Dinamica/pom.xml" />
+        <option value="$PROJECT_DIR$/Testes de software/Junit/pom.xml" />
       </set>
     </option>
   </component>

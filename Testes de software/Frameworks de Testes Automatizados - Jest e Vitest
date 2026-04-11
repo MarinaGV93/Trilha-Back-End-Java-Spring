@@ -1,0 +1,29 @@
+Jest
+
+    É um framework de teste unitario para JavaScript, desenvolvido pela Meta (Facebook)
+    Ele é amplamente utilizado para testar código JavaScript, especialmente em projetos baseados em React, Node.js e outras tecnologias JavaScript
+    É conhecido por sua simplicidade, velocidade e poderosos recursos de asserção
+
+    Benefícios
+
+        - Simplicidade: é projetado para funcionar sem configuração em código javascript padrao, permitindo iniciar testes com facilidade na maioria dos projetos
+        - Amplo suporte de estrutura: é  compativel com praticamente todas as principais estruturas de desenvolvimento javascript, tonando-o uma opção versátil para testes, independentemente do estilo do codigo
+        - Ampla documentação e suporte: possui uma documentação extensa e uma comunidade ativa, facilitando o acesso a recurso e suporte para desenvolvedores
+
+Vitest
+
+    É um framework de teste unitario para javascript
+    Foi criado para aumentar o Vite, uma ferramenta para ajudar a gerenciar e construir aplicações web baseadas em javascript
+    É compativel com a maior parte da API Jest. A maioria dos testes desenvolvidos para Jest também podem ser executados usando Vitest, com poucas ou nenhumas alterações necessarias
+
+    Beneficios
+
+        - Velocidade: oferece rotinas de teste rápidas para a maioria dos cenarios, destacando-se entre as estruturas de teste modernas em termos de desempenho
+        - Integração com Vite: a forte integração com o Vite simplifica a configuraação e melhora a experiencia de gerenciamento de testes
+        - Reutilização de configurações: para aplicações que usam Vite, é possível reutilizar configurações, plugins e outros elementos no Vitest, facilitando a criação dos testes
+
+Jest x Vitest
+
+    Ambas são tecnologias mais atuais, simples e rápidas.
+    As estruturas são maduras, compativeis com todas as estruturas de desenvolvimento javascript populares da atualidade e projetadas com a eficiência em mente. Ambos tambem podem servir de base para uma estrategia de automação de testes.
+    Podem fornecer resultados um pouco diferentes devido a certas diferenças na forma como funcionam.

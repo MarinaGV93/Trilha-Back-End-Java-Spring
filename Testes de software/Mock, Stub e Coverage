@@ -1,0 +1,70 @@
+Mock e Stub
+
+    Mock é uma tecnica utilizada em testes unitários de software para imitar ou gerar unidades falsas que simulam o comportamento de unidade reais. Simula os dados
+
+    Stubs são parecidos com os mocks, mas geralmente são mais simples e possuem um comportamento previsível de retorno. Simula o comportamento
+
+    Porque são uteis?
+
+        - Isolamento de dependências
+        - Controle sobre o comportamento
+        - Facilidade na implementação do teste
+        - Detecção antecipado de problemas
+        - Melhoria na velocidade de execução
+
+        import org.junit.jupiter.api.BeforeEach;
+        import org.junit.jupiter.api.Test;
+
+        import static org.junit.jupiter.api.Assertions.assertThrows;
+
+        //Fazer mocks
+        import static org.mockito.Mockito.*;
+
+        public class ContratoServiceTest{
+            .
+            .
+            .
+
+            @BeforeEach
+            public void setUp() {
+
+                //Cria um mock. Quando chamar o Repository, cria um mock
+                contratoRepositoryArquivo = mock(contratoRepositoryArquivo.class);
+
+                .
+                .
+                .
+            }
+
+            @Teste
+            public void testSalvarContratoInvalido(){
+                ContratoTrabalho contratoTrabalho = new ContratoTrabalho(Arrays.asList("Gabriel", "Daniel"));
+
+                //Stub. Lança uma exceção. Quando tiver o contrato arquivo, lança uma exceção
+                doThrow(new RuntimeExeception("Contrato invalido")).when(contratoValidatorArquivo).validarContrato(contratoTrabalho);
+            }
+        }
+
+Coverage (Cobertura de código/testes)
+
+    É uma métrica usada para medir a quantidade de código que está sendo exercida pelos testes automatizados.
+    Uma alta cobertura de testes indica que a maioria do código está sendo testada, enquanto uma baixa cobertura indica que há partes do código que não estão sendo testadas.
+
+    Porque fazemos?
+
+        Nos ajuda a identificar áreas do código que não estão sendo testadas, o que permite direcionar os esforços de teste para essas áreas.
+        Dá mais confiança na qualidade do código, pois sabe que as partes críticas estão sendo testadas.
+        Ajuda a detectar problemas de integração e regressão mais cedo no ciclo de desenvolvimento, o que reduz o custo e o esforço de correção de bugs.
+
+    Tecnologias usadas
+
+        - JaCoCo (Java Code Coverage)
+        - Jest (Node.js e React)
+        - Coverage.py (Python)
+        - Coverlet (C#/.NET)
+        - SonarQube (Multilinguagem) (DevOps/Deploy)
+
+        //Ver a classe dos serviços e a cobertura
+        Clica no botao direito no arquivo de teste > More Run/Debug > Run "..." with Coverage
+
+        No arquivo real, irá aparecer, nas linhas, uma barra verde para indicar que estao sendo cobertas, e a vermelha é que não estão
