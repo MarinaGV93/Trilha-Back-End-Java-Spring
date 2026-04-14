@@ -8,9 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Desenvolvimento_Java_profissional" />
+        <module name="Programacao_orientada_a_objetos_avacada_em_Java" />
         <module name="Programacao_dinamica" />
         <module name="Design_Patterns_em_Java" />
-        <module name="testSelenium" />
       </profile>
       <profile name="Annotation profile for curso-spring" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -30,6 +30,7 @@
       <module name="Junit" target="21" />
       <module name="Programacao_Dinamica" target="21" />
       <module name="teste-calculadora" target="21" />
+      <module name="testSelenium" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

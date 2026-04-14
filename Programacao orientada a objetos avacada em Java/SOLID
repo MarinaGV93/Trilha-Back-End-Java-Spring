@@ -1,0 +1,13 @@
+Guia para implementar melhor o código voltado a OO
+
+Tem 5 principios para guiar para um codigo mais limpo, mais legivel, mais facil de manter:
+
+- SRP (Principio da Responsabilidade Única): cada  classe tem que ter 1 responsabilidade
+
+- OCP (Principio Aberto/Fechado): aberta para extensão e fechada para modificação. Proteger a classe principal para não ser modificada muitas vezes
+
+- LSP (Principio da Substituição de Liskov): toda classe derivada deve ser substituivel pela sua classe filha. Toda a funcionalidade que descreve na classe pai, ela tem que ser colocada também para as suas filhas.
+
+- ISP (Principio da Segregação da Interface): criar interfaces bem refinadas para os clientes, onde os clientes vai ser basicamente a classe que vai implementar a interface. A interface precisa estar especificada para as outras classes. Criar interfaces pequenas e específicas.
+
+- DIP (Principio da Inversão de Dependencia): deve depender de classes de alto nivel (classes e modulos de que fazem abstrações (depender de abstrações e nao depender de implementação de coisas concretas do sistema))
