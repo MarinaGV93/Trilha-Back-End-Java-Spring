@@ -67,6 +67,7 @@ Antes de começar, você precisa ter instalado em sua máquina um editor para tr
 | [Git e Versionamento](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Primeira%20xicara%20de%20Java/Git%20e%20Versionamento) |
 | [Design Patterns em Java](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Design%20Patterns%20em%20Java) |
 | [Testes de software](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Testes%20de%20software) |
+| [Programação orientada a objetos avançada em Java (SOLID)](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Programacao%20orientada%20a%20objetos%20avacada%20em%20Java) |
 <!--
 | []() |
 | []() |
