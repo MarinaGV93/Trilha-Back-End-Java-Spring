@@ -1,0 +1,12 @@
+Objetivo:
+
+    - Reduzir latência de acesso a dados
+    - Melhorar desempenho
+    - Diminuir a carga em banco de dados ou servidores de origem
+
+Onde é usado?
+
+    - Navegadores web
+    - Servidores web
+    - CDNs  (Content Delivery Network - Rede de distribuição de conteudo) geolocalizados
+    - Proxies e Load Balancers

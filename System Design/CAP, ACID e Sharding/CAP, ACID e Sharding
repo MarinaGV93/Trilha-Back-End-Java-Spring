@@ -1,0 +1,41 @@
+ACID
+
+    A - Atomicidade
+
+        Garante que as transações sejam tratadas como uma unica unidade indivisivel
+
+    C - Consistencia
+
+        Garante que o sistema mantenha as regras definidas. Exemplo: código unico de um registro na tabela
+
+    I - Isolamento
+
+        Garante que as transações em execução sejam isoladas de outras transições em execução simultanea. Exemplo: Debito na conta de um cliente.
+
+    D - Durabilidade
+
+        Garante que as transações permaneçam permanentes. Exemplo: pagamento em loja virtual
+
+Teorema de CAP
+
+    C - Consistencia
+
+        Garante que o sistema mantenha as regras definidas. Exemplo: código unico de um registro na tabela
+
+        Pode custar aumento de latencia e a disponibilidade passa a ser reduzida
+
+    A - Availability (Disponibilidade)
+
+        Alta disponibilidade dos dados
+
+        Pode levar a inconsistencia ou conflitos de dados
+
+    P - Partition Tolerance (Tolerância a Particionamento)
+
+        Garante que os dados estejam disponiveis mesmo que haja interrupção de rede ou indisponibilidade do serviço. Pode ser vários HDs ou maquinas (clusters)
+
+    Só pode ter 2 dos 3.
+
+Sharding de dados
+
+    "Quebrar" o dado

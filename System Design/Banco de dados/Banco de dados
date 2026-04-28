@@ -1,0 +1,24 @@
+Relacionais
+
+    Vantagens:
+
+        - Integridade e segurança dos dados
+        - Padronização e ampla adoção da SQL
+
+    Desvantagens:
+
+        - Escalabilidade limitada
+        - Rigidez de esquema
+
+Não relacionais
+
+    Vantagens:
+
+        - Flexibilidade de esquema
+        - Escalabilidade horizontal
+        - Diversidade de modelos para diferentes necessidades
+
+    Desvantagens:
+
+        - Consistencia eventual em alguns modelos
+        - Complexidade devido à diversidade de opções

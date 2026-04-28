@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Programacao Dinamica/Programacao_Dinamica (1) (tech.ada.java.projetos).iml" filepath="$PROJECT_DIR$/Programacao Dinamica/Programacao_Dinamica (1) (tech.ada.java.projetos).iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Trilha-Back-End-Java-Spring.iml" filepath="$PROJECT_DIR$/.idea/Trilha-Back-End-Java-Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/cursospring/curso-spring.iml" filepath="$PROJECT_DIR$/cursospring/curso-spring.iml" />
     </modules>

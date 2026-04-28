@@ -1,0 +1,46 @@
+Uma fila pode ser uma saida quando escalar não é uma opção
+
+Porque é importante?
+
+    - Comunicação assíncrona
+    - Comunicação indireta por meio de mensagem
+    - Mensagens processadas posteriormente
+
+Beneficios:
+
+    - Desacoplamento
+    - Escalabilidade
+    - Confiabilidade
+    - Resiliência
+    - Melhora na performance
+
+Casos de uso comum:
+
+    - Tarefas em segundo plano: envio de email
+    - Integração de microsserviços
+    - Processamento de fluxo de dados
+
+Ferramentas:
+
+    - Apache Kafta: plataforma de streaming distribuida
+
+        - Open-source
+        - LinkedIn team
+        - Processa dados
+        - Brokers que produzem e processam dados
+
+    - RabbitMQ: plataforma para troca de mensagens
+
+        - Open-source
+        - Desenvolvido na linguagem Erlang
+        - Brokers que produzem e processam dados
+
+        Como funciona:
+
+            - Mensagens
+            - AMQP (Advanced Message Queuing Protocol)
+            - Filas
+            - Cluster
+            - Producers
+            - Consumers
+            

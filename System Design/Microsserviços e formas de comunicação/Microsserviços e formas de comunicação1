@@ -1,0 +1,44 @@
+Arquitetura monolítica
+
+    É um modelo tradicional de desenvolvimento de software que usa uma base de código para executar várias funções comerciais
+
+    Vantagens:
+
+        - Simplicidade
+        - Desempenho (menos latência)
+        - Facilidade de depuração
+        - Menor custo inicial
+
+    Desvantagens:
+
+        - Estabilidade limitada
+        - Complexidade
+        - Rigidez
+        - Falhas em cascata
+
+Arquitetura de microserviços
+
+    Consiste numa coleção de pequenos serviços autonomos. Cada serviço é autonomo e deve implementar um unico recurso de negocios dentro de um contexto limitado
+
+    Vantagens:
+
+        - Escalabilidade
+        - Flexibilidade
+        - Resiliencia
+        - Agilidade
+
+    Desvantagens:
+
+        - Complexidade
+        - Desempenho (mais latência)
+        - Dificuldade de depuração
+        - Maior custo inicial
+
+Protocolos de comunicação
+
+    - HTTP/HTTPS
+    - FTP
+    - SMTP/IMAP
+    - MQTT
+    - AMQP
+    - WebSockets

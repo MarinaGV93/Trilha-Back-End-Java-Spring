@@ -1,0 +1,22 @@
+Capacidade de um sistema suportar um aumento de carga total quando os recursos assim requisitam
+
+Scale Up (Escala Vertical)
+
+    Scale UP (Para cima) / Scale Down (Para baixo)
+
+    Usada quando precisa reagir rapidamente para consertar um problema de desempenho que nao pode ser resolvido usando técnicas classicas de otimização do banco de dados
+
+ Scale Out (Escala Horizontal)
+
+    Scale Out (expandir) / Scale In (diminuir)
+
+    Quando nao consegue obter recursos suficientes para as cargas de trabalho, mesmo operando nos níveis de desempenho mais altos
+
+Escala dinamica
+
+    Facilita a sobrecarga de gerenciamento reduzindo a necessidade de os operadores do sistema tomarem decisoes sobre a adiçao ou remoção de recursos ou a verificação do desempenho do sistema constantemente
+
+Balanceamento de carga
+
+    É a distribuição de cargas de trabalho em vários recursos de computação. Visa otimizar o uso de recursos, maximizar a taxa de transferencia, minimizar o tempo de resposta e evitar sobrecarregar qualquer recurso unico
+

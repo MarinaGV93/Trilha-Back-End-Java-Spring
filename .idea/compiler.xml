@@ -24,11 +24,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Analise_de_algoritmos" target="21" />
       <module name="API_Rest" target="21" />
       <module name="Design Patterns em Java" target="21" />
       <module name="Design_Patterns_em_Ja11va111" target="21" />
       <module name="Junit" target="21" />
+      <module name="Ordenacao_quadratica" target="21" />
       <module name="Programacao_Dinamica" target="21" />
+      <module name="Programacao_Dinamica (1) (tech.ada.java.projetos)" target="21" />
       <module name="teste-calculadora" target="21" />
       <module name="testSelenium" target="21" />
     </bytecodeTargetLevel>

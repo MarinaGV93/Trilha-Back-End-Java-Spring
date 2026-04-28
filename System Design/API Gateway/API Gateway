@@ -1,0 +1,26 @@
+Fornece um ponto de entrada centralizado para gerenciar interações entre clientes e serviços de aplicativo
+
+Autenticação e autorização
+
+Basic API authentication
+
+    Usuário e senha
+    Codificado em base64
+
+Key-based authentication
+
+    Uma chave unica é enviada no header da requisição
+    API verifica se a chave é valida
+
+LDAP authentication
+
+    A API valida credenciais do usuario validando o servidor LDAP
+
+OAuth authentication
+
+    O cliente obtem um token de acesso de um servidor de autorização
+    Nivel de acesso daquela requisicao
+
+OIDC
+Customizado
+JWT

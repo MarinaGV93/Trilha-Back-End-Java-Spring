@@ -1,0 +1,47 @@
+Sistemas computacionais que são executados em mais de um servidor, mas que atuam de forma transparente e parecem  ser uma unica coisa para quem os utiliza
+
+Separa o servidor de aplicação do servidor de banco de dados
+
+Projeto de arquitetura em um sistema distribuído de larga escala
+
+Define:
+
+    - Computação: como os dados serao processados
+    - Armazenamento: como armazenar os dados
+    - Manipulação de dados:  como os dados serao passados de um servidor para o outro
+    - Comunicação: como o sistema ira se comunicar de um servidor para o outro
+
+Para garantir:
+
+    - Confiabilidade
+    - Disponibilidade
+    - Consistência
+    - Tolerância a falhas
+    - Baixa latência
+    - Segurança
+
+Redes de computadores
+
+    "Fios" que ligam toda a comunicação de uma aplicação
+
+    Permite:
+
+        - Troca de mensagem
+        - Comunicações internas entre servidores
+        - Comunicações externas com usuários
+
+Problema:
+
+    Componentes de uma aplicação podem estar espalhado geograficamente pelo mundo, e a distancia entre eles e os usuarios, impactam o tempo de resposta
+
+    Solução:
+
+        Criar copias de conteudo estatico e distribuir atraves de CDN's (Content Delivery Network - Rede de distribuição de conteudo)
+
+DNS (Domain Name System - Sistema de nome de dominio)
+
+    Toda a comunicação  nas redes acontecem sobre o protocolo TCP/IP, onde cada computador possuem um endereco IP unico
+
+    IP (Internet Protocol - Protocolo de Internet)
+
+        Identifica e atribui endereços a dispositivos na rede publica e interna
