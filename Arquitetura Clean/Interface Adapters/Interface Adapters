@@ -1,0 +1,36 @@
+Camada responsável por traduzir e adaptar dados e chamadas entre a lógica interna e os frameworks externos
+
+Servir de ponte para que a camada interna (dominio e casos de uso) permaneça independente de detalhes de infraestrutura
+
+Funções e responsabilidades:
+
+    - Isolamento:
+
+        Protege a lógica de negocio contra mudanças em frameworks e tecnologias
+
+    - Conversao de dados:
+
+        Mapeia dados entre formatos internos e externos
+
+    - Coordenacao:
+
+        Recebe requisições de interfaces externas (UI, APIs) e as encaminha para o core do sistema
+
+Componentes comuns:
+
+    - Controladores
+    - Apresentadores (Presentations)
+    - Mapeadores (Mappers)
+
+Tecnicas utilizadas:
+
+    - Mapeamento de dados
+    - Conversão de formatos
+    - Encapsulamento de chamadas externas
+
+Beneficios:
+
+    - Facilidade para utilizar novas tecnologias
+    - Facilidade em trabalhar com conversão de dados
+    - Facilidade em dar manu
+    - Protege o dominio do negocio de alterações externas

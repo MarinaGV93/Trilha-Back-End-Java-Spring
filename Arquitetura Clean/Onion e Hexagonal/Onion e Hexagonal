@@ -1,0 +1,22 @@
+- Ambas seguem os principios da arquitetura limpa
+- Focam na separação de responsabilidades e independencia de frameworks
+- Tornam a aplicação testavel, flexivel e escalavel
+
+Problemas que resolvem:
+
+    - Evitam que regras de negocio fiquem acopladas a frameworks
+    - Tornam a aplicação independente de BD, interface e tecnologias externas
+    - Melhoram a testabilidade e organização do codigo
+
+Beneficios:
+
+    - Separação clara de responsabilidades
+    - Facilidade para testar a logica de negocios
+    - Independencia de tecnologias externas
+    - Facilidade para trocar BD, frameworks, UI e protocolos
+    - Código mais modular e reutilizável
+
+Usos:
+
+    - Onion: quando precisar de uma arquitetura estruturada em camadas
+    - Hexagonal: quando precisar de modulos independentes e intercambiaveis

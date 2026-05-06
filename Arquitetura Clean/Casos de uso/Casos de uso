@@ -1,0 +1,27 @@
+Representação das operações e regras especificas que a aplicação deve executar
+
+Conectar as entradas do usuario as regras de dominio, orquestrando a execução da lógica de negocio
+
+Atuam como um nucleo da aplicação, garantindo que a lógica da aplicação permaneça intacta, mesmo que as tecnologias ao redor mudem.
+
+    - Independencia de interface: um caso de uso pode ser acionado via API, CLI ou interface grafica sem mudanças internas
+
+    - Independencia de banco de dados: se o BD mudar, os casos de uso continuam funcionando
+
+    - Independencia de frameworks: nao contem dependencias diretas de frameworks
+
+Implementação na aplicação:
+
+    - Estrutura
+
+        Normalmente implementados como classes ou serviços que expoem métodos representando operações do negocio
+
+    - Interação
+
+        Invocam entidades para processar regras e interagem com adaptadores para persistencia e comunicação externa
+
+Beneficios:
+
+    - Centralização
+    - Flexibilidade
+    - Testabilidade

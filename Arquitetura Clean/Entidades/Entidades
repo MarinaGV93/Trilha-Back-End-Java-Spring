@@ -1,0 +1,37 @@
+Por que sao importantes na camada interna?
+
+    - Independencia de implementacao
+    - Facilitam testes unitarios
+
+Boa praticas:
+
+    1 - Encapsule a Lógica de Negócio dentro da Entidade
+
+        Mantenha toda a lógica de negocio relevante dentro da propria entidade
+
+    2 - Mantenha as entidade imutaveis
+
+        Sempre que possivel, crie entidades imutaveis apos sua criacao
+
+        Alterações nos dados da entidade devem ocorrer por meio de métodos que retornem uma nova instancia
+
+    3 - Evite dependencias externas na entidade
+
+        Entidades devem ser independentes de qualquer infraestrutura externa, como bancos de dados ou frameworks, para que as regras de negocio permaneçam isoladas
+
+    4 - Defina responsabilidades claras
+
+        Cada entidade deve ter uma responsabilidade bem definida e focada no dominio
+
+    5 - Utilize tipos de dados e validações claras
+
+        Use tipos fortes e valide entradas, como emails ou numeros, para assegurar que os dados da entidade sejam sempre consistentes e validos
+
+Beneficios:
+
+    - Clareza e coesao
+    - Facilidade de testes
+    - Manutenibilidade
+    - Independencia de infraestrutura
+    - Redução de erros
+    - Facilidade na integração com outros sistemas

@@ -1,0 +1,31 @@
+Sao verificações automatizadas para garantir que o codigo funciona corretamente. Ajudam a prevenir bugs, melhorar a qualidade e facilitar mudanças no software
+
+- Garante que o codigo funciona como esperado
+- Reduz retrabalho ao detectar erros cedo
+- Facilita a refatoração e evolução do sistema
+- Melhora a confiabilidade da aplicação
+
+Tipos
+
+    - Teste Unitários (mais isolados)
+
+        - Testam entidades e casos de uso
+        - Não dependem de frameworks ou infraestrutura
+
+    - Testes de Integração (validam comunicação)
+
+        - Testam BD e APIs externas
+        - Usam Spring Boot Test, Testcontainers, H2
+
+    - Testes End-to-End (E2E) (simulam usuário real)
+
+        - Validam fluxos completos da aplicação
+        - Usam Cypress, Selenium, Playwright
+
+Como a arquitetura limpa facilita os testes?
+
+    - Separação de responsabilidades: facilita testes isolados
+    - Camada de dominio sem dependencias: testes mais rápidos
+    - Inversao de dependencia: usa mocks facilmente
+    - Facilidade para testes de integração: modulos independentes
+

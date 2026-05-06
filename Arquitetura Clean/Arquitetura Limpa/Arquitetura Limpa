@@ -1,0 +1,5 @@
+Uma abordagem de design de software que promove a separação de responsabilidades e a independência de detalhes externos (frameworks, banco de dados, interfaces de usuario)
+
+Objetivo:
+
+    Facilitar a compreensão, manutenção e evolução do sistema

@@ -1,0 +1,3 @@
+Injeção de dependencia (DI - Dependency Injection)
+
+    É um padrao que permite passar dependencias para uma classe ao inves de ela criar essas dependencias diretamente. Isso reduz o acoplamento e melhora a testabilidade do codigo

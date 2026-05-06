@@ -1,0 +1,214 @@
+S- Single Responsibility
+
+    Uma classe, uma responsabilidade
+
+    Sem:
+
+        class Report{
+            void generateReport(){ lógica para gerar relatório };
+            void printReport(){ lógica para imprimir relatório };
+        }
+
+    Com:
+
+        class ReportGenerator{
+            void generate(){ lógica para gerar relatório };
+        }
+        class ReportPrinter{
+            void print(){ lógica para imprimir relatório };
+        }
+
+
+O - Open/Closed
+
+    Extensível, nao modificado
+
+    Sem:
+
+        class PaymentService{
+            void pay(String paymentType){
+                if (paymentType.equals("CreditCard")) { logica cartao };
+                else if (paymentType.equals("PayPal")) { logica PayPal };
+             };
+        }
+
+    Com:
+
+        interface PaymentMethod{
+            void pay();
+        }
+        class CreditCardPayment implements PaymentMethod{
+            public void pay(){ lógica cartao };
+        }
+        class PayPalPayment implements PaymentMethod{
+            public void pay(){ lógica PayPal };
+        }
+        class PaymentProcessor{
+            void processPayment(PaymentMethod method){
+                method.pay();
+            };
+        }
+
+L - Liskov Substitution
+
+    Substitua por subtipos
+
+    Sem:
+
+        class Rectangle{
+            protected int width;
+            protected int height;
+
+            public void setWidth(int width) {
+                this.width = width;
+            }
+
+            public void setHeight(int height) {
+                this.height = height;
+            }
+
+            public int getArea() {
+                return width * height;
+            }
+        }
+
+        //Quadrado herda de Retângulo, mas altera comportamento esperado
+        class Square extends Rectangle{
+            @Override
+            public void setWidth(int width) {
+                this.width = width;
+                this.height = width;
+            }
+
+            @Override
+            public void setHeight(int height) {
+                this.width = height;
+                this.width = height;
+            }
+
+        }
+
+    Com:
+
+        interface Shape{
+            int getArea();
+        }
+
+        class Rectangle implements Shape{
+
+            protected int width;
+            protected int height;
+
+            public Rectangle(int width, int height){
+                this.width = width;
+                this.height = height;
+            }
+
+            public int getArea() {
+                return width * height;
+            }
+        }
+
+        class Square implements Shape{
+            private int side;
+
+            public Square(int side){
+                this.side = side;
+            }
+
+            public int getArea() {
+                return side * side;
+            }
+        }
+
+I - Interface Segregation Principle (ISP)
+
+    Menor, interfaces específicas
+
+    Sem:
+
+        interface Worker{
+            void work();
+            void eat();
+        }
+
+        class Robot implements Worker{
+            public void work(){ logica de trabalho }
+            public void eat(){ throw new UnsupportedOperationException("Robôs não comem!") }
+        }
+
+    Com:
+
+        interface Workable{
+            void work();
+        }
+
+        interface Eatable{
+            void eat();
+        }
+
+        class Human implements Workable, Eatable{
+            public void work() { logica de trabalho }
+            public void eat() { logica de comer }
+        }
+
+        class Robot implements Workable{
+            public void work() { logica de trabalho }
+        }
+
+D - Dependency Inversion Principle (DIP)
+
+    Dependa de abstrações, nao de implementações
+
+    Sem:
+
+        class MySQLDatabase{
+            void save(String data) { logica de salvar no MySQL }
+        }
+
+        class UserService{
+            private MySQLDatabase database = new MySQLDatabase();
+
+            void saveUser(String user){
+                database.save(user);
+            }
+        }
+
+    Com:
+
+        interface Database{
+            void save(String data);
+        }
+        class MySQLDatabase implements Database{
+            public void save(String data) { logica de salvar no MySQL }
+        }
+        class PostgresDatabase implements Database{
+            public void save(String data) { logica de salvar no Postgres }
+        }
+        class UserService{
+            private Database database;
+
+            UserService(Database database){
+                this.database = database;
+            }
+
+            void saveUser(String user){
+                database.save(user);
+            }
+        }
+
+Relação com o Clean Arch
+
+     Estrutura o codigo de uma forma que fique facil conseguir delegar as responsabilidades para cada camada
+
+     Separação de responsabilidades
+
+     Indepedência de frameworks
+
+     Regras de negocio centradas no domínio
+
+     Adaptabilidade a novas tecnologias
+
+     Facilidade de modificação
+
+ Sistemas com baixo acoplamento e alta coesao, facilitando a evolução e testes

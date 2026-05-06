@@ -1,0 +1,9 @@
+Beneficios:
+
+    - Baixo acoplamento: O dominio nao depende de frameworks
+
+    - Testabilidade: Pode testar os casos de uso sem acessar banco
+
+    - Flexibilidade: Pode trocar de ORM ou BD sem impactar o core
+
+    - Reutilização: O mesmo Caso de Uso para ser usado por diferentes interfaces
