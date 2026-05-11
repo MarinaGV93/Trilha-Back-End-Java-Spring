@@ -58,13 +58,13 @@ Antes de começar, você precisa ter instalado em sua máquina um editor para tr
 
 <div id="table" align="center">
 
-| Aulas | 
-| :----: | 
-| [Lives](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Aulas-live) |
-| [Curso Spring](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/cursospring) |
-| [Desenvolvimento Java Profissional](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Desenvolvimento%20Java%20profissional) |
-| [Primeira xicara de Java](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Primeira%20xicara%20de%20Java) | 
-| [API Rest](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/API%20Rest) |
+| Aulas | Lives |
+| :----: | :----: | 
+| [Lives](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Aulas-live) | [Programação dinâmica](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Aulas-live/Programa%C3%A7%C3%A3o%20din%C3%A2mica) |
+| [Curso Spring](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/cursospring) | [ToDo List 1](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Aulas-live/aula-todo-list) |
+| [Desenvolvimento Java Profissional](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Desenvolvimento%20Java%20profissional) | [ToDo List 2](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Aulas-live/todo-list) |
+| [Primeira xicara de Java](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Primeira%20xicara%20de%20Java) |  [Aplicações Maduras e Flexíveis](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/blob/main/Aulas-live/Aplica%C3%A7%C3%B5es%20Maduras%20e%20Flex%C3%ADveis) |
+| [API Rest](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/API%20Rest) | [Primeira Aplicação Spring Boot](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/blob/main/Aulas-live/Primeira%20Aplica%C3%A7%C3%A3o%20Spring%20Boot) |
 | [Banco de dados](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Banco%20de%20dados) |
 | [Git e Versionamento](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Primeira%20xicara%20de%20Java/Git%20e%20Versionamento) |
 | [Design Patterns em Java](https://github.com/MarinaGV93/Trilha-Back-End-Java-Spring/tree/main/Design%20Patterns%20em%20Java) |
